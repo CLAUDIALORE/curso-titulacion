@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        table{
+            width: 50%;
+            border: 2px solid rgb(17, 205, 238); /*agregar un borde solido de color negro*/
+            text-align: center; /* centrar el texto*/
+        }
+        th, td{
+            border: 2px solid rgb(0, 0, 0);
+        }
+        encabezado{
+            background-color: beige;color: red; /* color de fondo para el encabezado*/
+        }
+        .fila2{
+            background-color: rgb(235, 192, 135);color: rgb(248, 245, 245);
+        }
+        .fila3{
+            background-color: rgb(208, 235, 135);color: rgb(238, 245, 245);
+        }
+</style>
+</head>
+<body>
+    <!--table width="50%"border="1px" cellpadding="5px" cellspacing="5px"--->
+    <!--table tsyle="50%" border="1px" cellpadding="5px" cellspacing="5px"-->
+    <table tsyle="50%; border: 1px solid black" cellpadding="5px" cellspacing="5px">
+        
+         <!--tr bgcolor="lightgray"> <!--filas table row-->
+         <tr style="background-color: beige;color: rgb(0, 255, 55);"> <!--filas table row-->
+         <th colspan="2"> nombre completo</th> <!--atributo collsapan para extender las columnas-->
+         <th>Edad</th>  <!--encabezado de la tabla-->
+         </tr>
+         <tr>
+             <tr class="fila2">
+             <td>luz</td> <!--datos de la tabla-->
+             <td>flor</td>
+             <td rowspan="2">50</td> <!--atributo rowspan para extender las filas-->
+         </tr>
+         <tr>
+             <td>luz</td> <!--datos de la tabla-->
+             <td>flor</td>
+             <!--td>50</td-->
+
+         </tr>
+          <tr>
+            <tr class="fila3">
+              <td>dani</td>
+              <td>perla</td>
+              <td>50</td>
+          </tr>
+    </table>
+</body>
+</html>
